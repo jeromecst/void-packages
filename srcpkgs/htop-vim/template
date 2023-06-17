@@ -1,15 +1,15 @@
-# Template file for 'htop'
-pkgname=htop
+# Template file for 'htop-vim'
+pkgname=htop-vim
 version=3.2.2
 revision=1
 build_style=gnu-configure
 configure_args="--enable-unicode --enable-sensors"
 makedepends="ncurses-devel libsensors-devel"
-short_desc="Interactive process viewer"
-maintainer="Frank Steinborn <steinex@nognu.de>"
+short_desc="Interactive process viewer patched with key bindings"
+maintainer="Jérôme <void@jeromecst.com>"
 license="GPL-2.0-only"
 homepage="https://htop.dev/"
 changelog="https://raw.githubusercontent.com/htop-dev/htop/main/ChangeLog"
 distfiles="https://github.com/htop-dev/htop/releases/download/${version}/htop-${version}.tar.xz"
 checksum=bac9e9ab7198256b8802d2e3b327a54804dc2a19b77a5f103645b11c12473dc8
-conflicts="htop-vim"
+conflicts="htop"
